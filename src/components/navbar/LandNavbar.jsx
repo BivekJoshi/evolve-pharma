@@ -36,7 +36,7 @@ const LandNavbar = () => {
 
   return (
     <>
-      <Box sx={{ boxShadow: "0 4px 10px -2px rgba(0,0,0,0.1)" }}>
+      <Box sx={{ boxShadow: "0 1px 10px -2px rgba(0,0,0,0.1)" }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", padding: "14px 16px", backgroundColor: "#FFFF" }}>
           <div>
             <div style={{ width: "150px", height: "35px" }}>

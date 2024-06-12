@@ -64,7 +64,7 @@ const LandFooter = () => {
             </div>
             <div className="footer-bottom">
                 <div className="footer-bottom-inner">
-                    <p className="terms">Terms and Conditions</p>
+                    <p className="terms">Powered by Yejus' Paw - Bivek Joshi</p>
                     <div className="footer-logo">
                         <img src={FooterLogo} alt="Footer Logo" />
                     </div>
