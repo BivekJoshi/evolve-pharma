@@ -6,6 +6,7 @@ import Img4 from "../../../assets/Casourel/Img4.jpg";
 import Img5 from "../../../assets/Casourel/Img5.jpg";
 import "./ImageCarousel.css";
 import { Box, Container } from "@mui/material";
+import OfferImage from "../../../assets/OfferImage.jpg";
 
 const images = [
   { src: Img1, caption: "High Quality Products" },
@@ -18,15 +19,13 @@ const images = [
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically change images at intervals
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
-  // Manually change image
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -59,11 +58,10 @@ const ImageCarousel = () => {
             </div>
           </div>
           <div className="advertisement-section">
-            <h3>Special Offer!</h3>
-            <p>
-              Get exclusive discounts
-              <br /> on bulk orders.
-            </p>
+            <img
+              src={OfferImage}
+              style={{ width: "100%", height: "100%", overflow: "hidden" }}
+            />
           </div>
         </div>
       </Container>
