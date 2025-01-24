@@ -17,7 +17,7 @@ const actions = [
 
 const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
     position: "fixed",
-    bottom: theme.spacing(8),
+    bottom: theme.spacing(4),
     right: theme.spacing(2),
     zIndex: 1100,
     '& .MuiSpeedDial-fab': {
@@ -36,7 +36,7 @@ const LandingUILayout = () => {
             </div>
             <div style={{
                 flex: "1 0 auto",
-                marginTop: "60px"
+                marginTop: "50px"
             }}>
                 <Outlet />
             </div>

@@ -5,6 +5,7 @@ import Img3 from "../../../assets/Casourel/Img3.jpg";
 import Img4 from "../../../assets/Casourel/Img4.jpg";
 import Img5 from "../../../assets/Casourel/Img5.jpg";
 import "./ImageCarousel.css";
+import { Box, Container } from "@mui/material";
 
 const images = [
   { src: Img1, caption: "High Quality Products" },
@@ -36,28 +37,37 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="carousel-container">
-      <div className="carousel">
-        <button onClick={handlePrevious} className="carousel-control left">
-          &#10094;
-        </button>
-        <button onClick={handleNext} className="carousel-control right">
-          &#10095;
-        </button>
-        <div className="carousel-slide">
-          <img
-            src={images[currentIndex].src}
-            alt={images[currentIndex].caption}
-            className="carousel-image"
-          />
-          <div className="carousel-caption">{images[currentIndex].caption}</div>
+    <Box sx={{ backgroundColor: "white" }}>
+      <Container maxWidth="lg" sx={{ py: 1, pb: 3 }}>
+        <div className="carousel-container">
+          <div className="carousel">
+            <button onClick={handlePrevious} className="carousel-control left">
+              &#10094;
+            </button>
+            <button onClick={handleNext} className="carousel-control right">
+              &#10095;
+            </button>
+            <div className="carousel-slide">
+              <img
+                src={images[currentIndex].src}
+                alt={images[currentIndex].caption}
+                className="carousel-image"
+              />
+              <div className="carousel-caption">
+                {images[currentIndex].caption}
+              </div>
+            </div>
+          </div>
+          <div className="advertisement-section">
+            <h3>Special Offer!</h3>
+            <p>
+              Get exclusive discounts
+              <br /> on bulk orders.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="advertisement-section">
-        <h3>Special Offer!</h3>
-        <p>Get exclusive discounts on bulk orders.</p>
-      </div>
-    </div>
+      </Container>
+    </Box>
   );
 };
 

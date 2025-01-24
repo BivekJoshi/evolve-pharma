@@ -13,12 +13,13 @@ const LandingUIPage = () => {
     <>
       <MidBavbar />
       <ImageCarousel/>
-      <AboutUs />
       <Client />
-      <News />
+      <AboutUs />
       <BusinessModal/>
       <SOPManual/>
       <WhyUs/>
+      <News />
+
     </>
   );
 };

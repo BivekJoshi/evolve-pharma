@@ -10,6 +10,7 @@ import seven from "../../../assets/Business/seven.jpeg";
 import { Fade } from "react-awesome-reveal";
 import {
   Box,
+  Container,
   Grid,
   Stack,
   Typography,
@@ -28,18 +29,21 @@ const BusinessModal = () => {
       id: nanoid(),
       header: "Sales & Marketing",
       img: one,
+      color: "#0484C5",
       desc: "Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts.  Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts. ",
     },
     {
       id: nanoid(),
       header: "Distribution & Logistics",
       img: two,
+      color: "#01A16F",
       desc: "Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts.  Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts. ",
     },
     {
       id: nanoid(),
       header: "Product  Registration and Development",
       img: three,
+      color: "#F3852D",
       desc: "Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts.  Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts. ",
     },
   ];
@@ -49,18 +53,21 @@ const BusinessModal = () => {
       id: nanoid(),
       header: "Pharmaceuticals Products",
       img: four,
+      color: "#C3D431",
       desc: "Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts.  Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts. ",
     },
     {
       id: nanoid(),
       header: "Diagnostics & Devices",
       img: five,
+      color: "#04B1E8",
       desc: "Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts.  Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts. ",
     },
     {
       id: nanoid(),
       header: "Hospital Supplies",
       img: six,
+      color: "#BD4A89",
       desc: "Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts.  Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing layouts. ",
     },
   ];
@@ -88,6 +95,7 @@ const BusinessModal = () => {
                   fontSize: isXs ? "16px" : "20px",
                   fontWeight: 600,
                   mb: 0.5,
+                  color: item.color || "",
                 }}
               >
                 {item.header}
@@ -130,6 +138,7 @@ const BusinessModal = () => {
                   fontSize: isXs ? "16px" : "20px",
                   fontWeight: 600,
                   mb: 0.5,
+                  color: item.color || "",
                 }}
               >
                 {item.header}
@@ -150,17 +159,7 @@ const BusinessModal = () => {
   };
 
   return (
-    <Box
-      sx={{
-        margin: {
-          xs: "2rem auto",
-          sm: "3rem auto",
-          md: "4rem auto",
-          lg: "2rem auto",
-        },
-        width: "90%",
-      }}
-    >
+    <Container maxWidth="lg" sx={{ py: 6 }}>
       <Grid container>
         <Grid
           item
@@ -201,11 +200,7 @@ const BusinessModal = () => {
 
         <Stack
           sx={{
-            display: "flex",
-            flexDirection: "column",
             width: "100%",
-            gap: "2rem",
-            alignItems: "center",
           }}
         >
           <Box
@@ -213,38 +208,21 @@ const BusinessModal = () => {
               width: "100%",
               display: "flex",
               flexDirection: isSm ? "column" : "row",
-              justifyContent: "center",
+              justifyContent: "space-between",
               gap: "2rem",
               alignItems: "center",
             }}
           >
-            <Box sx={{ width: isSm ? "100%" : "30%" }}>
+            <Box sx={{ width: isSm ? "100%" : "50%" }}>
               {renderItems(data1, true)}
             </Box>
-            <Box
-              sx={{
-                width: isSm ? "100%" : "20%",
-                display: "flex",
-                justifyContent: "center",
-                mb: isSm ? 2 : 0,
-              }}
-            >
-              <img
-                src={seven}
-                alt="how it works"
-                style={{
-                  width: isSm ? "80%" : "100%",
-                  maxWidth: "200px",
-                }}
-              />
-            </Box>
-            <Box sx={{ width: isSm ? "100%" : "30%" }}>
+            <Box sx={{ width: isSm ? "100%" : "50%" }}>
               {renderItems(data2, false)}
             </Box>
           </Box>
         </Stack>
       </Grid>
-    </Box>
+    </Container>
   );
 };
 

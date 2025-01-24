@@ -27,7 +27,7 @@ const AnimatedBox = styled(Box)(({ theme }) => ({
 
 const WhyUs = () => {
   return (
-    <Container maxWidth="lg" sx={{ py: 5 }}>
+    <Container maxWidth="lg" sx={{ py: 1, pt: 6, pb: 6 }}>
       {/* Hero Section */}
       <AnimatedBox textAlign="center" mb={5}>
         <Typography variant="h3" fontWeight="bold" color="primary">
