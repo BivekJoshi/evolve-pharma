@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Img1 from "../../../assets/Casourel/Img1.jpg";
-import Img2 from "../../../assets/Casourel/Img2.jpg";
-import Img3 from "../../../assets/Casourel/Img3.jpg";
+import Img1 from "../../../assets/Casourel/Img6.jpeg";
+import Img2 from "../../../assets/Casourel/Img7.jpeg";
+import Img3 from "../../../assets/Casourel/Img8.jpeg";
 import Img4 from "../../../assets/Casourel/Img4.jpg";
 import Img5 from "../../../assets/Casourel/Img5.jpg";
 import "./ImageCarousel.css";
