@@ -12,8 +12,8 @@ const images = [
   { src: Img1, caption: "High Quality Products" },
   { src: Img2, caption: "Reliable and Fast Shipping" },
   { src: Img3, caption: "Trusted by Pharmacies Nationwide" },
-  { src: Img4, caption: "Affordable Pricing" },
-  { src: Img5, caption: "Customer Satisfaction" },
+  // { src: Img4, caption: "Affordable Pricing" },
+  // { src: Img5, caption: "Customer Satisfaction" },
 ];
 
 const ImageCarousel = () => {
