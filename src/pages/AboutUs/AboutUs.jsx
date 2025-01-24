@@ -1,8 +1,6 @@
 import "./AboutUs.scss";
 import We1 from "../../assets/we1.jpg";
 import GopalKhanal from "../../assets/GopalKhanal.png";
-import We3 from "../../assets/We3.png";
-import We4 from "../../assets/We4.png";
 import { Box, Container } from "@mui/material";
 
 const AboutUs = () => {

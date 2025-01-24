@@ -7,6 +7,7 @@ import BusinessModal from "./BusinessModal/BusinessModal";
 import SOPManual from "./SOPManual/SOPManual";
 import WhyUs from "./WhyUs/WhyUs";
 import ImageCarousel from "./InitialUI/ImageCarousel";
+import JoinUs from "./JoinUs/JoinUs";
 
 const LandingUIPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingUIPage = () => {
       <Client />
       <AboutUs />
       <BusinessModal/>
+      <JoinUs/>
       <SOPManual/>
       <WhyUs/>
       <News />

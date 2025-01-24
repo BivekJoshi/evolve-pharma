@@ -128,20 +128,6 @@ const WhyUs = () => {
           ))}
         </Grid>
       </Box>
-
-      {/* Call-to-Action Section */}
-      <Divider sx={{ my: 5 }} />
-      <AnimatedBox textAlign="center" py={5} sx={{ bgcolor: 'primary.light', borderRadius: 2 }}>
-        <Typography variant="h4" fontWeight="bold" color="white" gutterBottom>
-          Ready to Join Us?
-        </Typography>
-        <Typography variant="body1" color="white" paragraph>
-          Experience seamless wholesale with PharmaWholesale. Sign up today!
-        </Typography>
-        <Button variant="contained" color="secondary" size="large">
-          Get Started
-        </Button>
-      </AnimatedBox>
     </Container>
   );
 };
