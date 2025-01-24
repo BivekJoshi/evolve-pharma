@@ -2,15 +2,18 @@ import "./AboutUs.scss";
 import We1 from "../../assets/we1.jpg";
 import GopalKhanal from "../../assets/GopalKhanal.png";
 import { Box, Container } from "@mui/material";
+import { Fade } from "react-awesome-reveal";
 
 const AboutUs = () => {
   return (
-    <Box sx={{ backgroundColor: "white", py:6  }}>
+    <Box sx={{ backgroundColor: "white", py: 6 }}>
       <Container maxWidth="lg" sx={{ py: 1 }}>
         <div className="about-us-container">
           <div className="about-us-main">
             <div className="left-panel">
-              <h2 className="title" style={{color:"#03517A"}}>Who we are</h2>
+              <h2 className="title" style={{ color: "#03517A" }}>
+                Who we are
+              </h2>
               <p className="subtitle">
                 Evolve pharma is created with the aim
                 <br /> to evolve the Nepalese pharma market
@@ -55,15 +58,20 @@ const AboutUs = () => {
             <div className="right-panel">
               <div className="image-container">
                 <div className="image-row1">
-                  <div className="image-card">
-                    <img src={GopalKhanal} alt="Description" />
-                  </div>
+                  <Fade direction="up" duration={2000}>
+                    <div className="image-card">
+                      <img src={GopalKhanal} alt="Description" />
+                    </div>
+                  </Fade>
                   <h3>Mr. Gopal Khanal</h3>
                 </div>
                 <div className="image-row2">
-                  <div className="image-card">
-                    <img src={We1} alt="Description" />
-                  </div>
+                  <Fade direction="down" duration={2000}>
+                    <div className="image-card">
+                      <img src={We1} alt="Description" />
+                    </div>
+                  </Fade>
+
                   <h3>Mr. Madhu Paudel</h3>
                 </div>
               </div>

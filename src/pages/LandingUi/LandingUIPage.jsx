@@ -8,6 +8,7 @@ import SOPManual from "./SOPManual/SOPManual";
 import WhyUs from "./WhyUs/WhyUs";
 import ImageCarousel from "./InitialUI/ImageCarousel";
 import JoinUs from "./JoinUs/JoinUs";
+import ContactUs from "./ContactUs/ContactUs";
 
 const LandingUIPage = () => {
   return (
@@ -21,6 +22,7 @@ const LandingUIPage = () => {
       <SOPManual/>
       <WhyUs/>
       <News />
+      <ContactUs/>
 
     </>
   );
