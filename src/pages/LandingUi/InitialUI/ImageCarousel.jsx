@@ -36,36 +36,34 @@ const ImageCarousel = () => {
   };
 
   return (
-    <Box sx={{ backgroundColor: "white" }}>
-      <Container maxWidth="lg" sx={{ py: 1, pb: 3 }}>
-        <div className="carousel-container">
-          <div className="carousel">
-            <button onClick={handlePrevious} className="carousel-control left">
-              &#10094;
-            </button>
-            <button onClick={handleNext} className="carousel-control right">
-              &#10095;
-            </button>
-            <div className="carousel-slide">
-              <img
-                src={images[currentIndex].src}
-                alt={images[currentIndex].caption}
-                className="carousel-image"
-              />
-              <div className="carousel-caption">
-                {images[currentIndex].caption}
-              </div>
+    <Container maxWidth="lg" sx={{ py: 1, pb: 3 }}>
+      <div className="carousel-container">
+        <div className="carousel">
+          <button onClick={handlePrevious} className="carousel-control left">
+            &#10094;
+          </button>
+          <button onClick={handleNext} className="carousel-control right">
+            &#10095;
+          </button>
+          <div className="carousel-slide">
+            <img
+              src={images[currentIndex].src}
+              alt={images[currentIndex].caption}
+              className="carousel-image"
+            />
+            <div className="carousel-caption">
+              {images[currentIndex].caption}
             </div>
           </div>
-          <div className="advertisement-section">
-            <img
-              src={OfferImage}
-              style={{ width: "100%", height: "100%", overflow: "hidden" }}
-            />
-          </div>
         </div>
-      </Container>
-    </Box>
+        <div className="advertisement-section">
+          <img
+            src={OfferImage}
+            style={{ width: "100%", height: "100%", overflow: "hidden" }}
+          />
+        </div>
+      </div>
+    </Container>
   );
 };
 

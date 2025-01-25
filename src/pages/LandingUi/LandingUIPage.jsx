@@ -9,21 +9,33 @@ import WhyUs from "./WhyUs/WhyUs";
 import ImageCarousel from "./InitialUI/ImageCarousel";
 import JoinUs from "./JoinUs/JoinUs";
 import ContactUs from "./ContactUs/ContactUs";
+import BusinessProcess from "./BusinessModal/BusinessProcess";
+import { Box } from "@mui/material";
 
 const LandingUIPage = () => {
   return (
     <>
       <MidBavbar />
-      <ImageCarousel/>
+      <Box sx={{ backgroundColor: "white" }}>
+        <ImageCarousel />
+      </Box>
       <Client />
-      <AboutUs />
-      <BusinessModal/>
-      <JoinUs/>
-      <SOPManual/>
-      <WhyUs/>
-      <News />
-      <ContactUs/>
-
+      <Box sx={{ backgroundColor: "white" }}>
+        <AboutUs />
+      </Box>
+      <BusinessProcess />
+      <Box sx={{ backgroundColor: "white" }}>
+        <BusinessModal />
+      </Box>
+      <JoinUs />
+      <Box sx={{ backgroundColor: "white" }}>
+        <SOPManual />
+      </Box>
+      <WhyUs />
+      <Box sx={{ backgroundColor: "white" }}>
+        <News />
+      </Box>
+      <ContactUs />
     </>
   );
 };

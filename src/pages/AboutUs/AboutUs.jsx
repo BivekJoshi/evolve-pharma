@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 const AboutUs = () => {
   return (
-    <Box sx={{ backgroundColor: "white", py: 6 }}>
+    <Box sx={{ py: 6 }}>
       <Container maxWidth="lg" sx={{ py: 1 }}>
         <div className="about-us-container">
           <div className="about-us-main">

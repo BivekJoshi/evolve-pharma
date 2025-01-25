@@ -66,7 +66,7 @@ const Client = () => {
                 .map((img, index) => (
                   <span key={index}>
                     <Fade
-                      direction="top"
+                      // direction="right"
                       duration={2000}
                       triggerOnce
                       key={`${currentSlide}-${index}`}
